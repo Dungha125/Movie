@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import './App.css';
 import Slidebar from './components/Slidebar';
 import Navbar from './components/Navbar';
+import Phimle from './components/Phimle';
 import img1 from './image/img1.jpg';
 import img2 from './image/img2.jpg';
 import img3 from './image/img3.jpg';
@@ -26,6 +27,10 @@ const Imageslide = ({image}) =>
   }, [image.length]);
   return <Slidebar image={image[currentImage]} />;
 }
+const Imageitem =({image}) =>
+{
+  return <Phimle image={image[1]} />
+}
 function App() {
   return (
     <div className="App">
@@ -33,7 +38,10 @@ function App() {
         <div className="nav">
           <Navbar />
         </div>
-        <Imageslide image={image} />
+          <Imageslide image={image} />
+        <div className='main-content'>
+          <Imageitem image={image} />
+        </div>
     </div>
   );
 }
