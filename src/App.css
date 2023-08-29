@@ -8,18 +8,36 @@
 /*slide bar*/
 .slide
 {
-  width: 100%;
-  height: 200px;
-  background-image: url(image/slider.png);
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  max-height: 300px;
+  overflow: hidden;
 }
+.slide_image {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
 
 /*navigator*/
 .nav
 {
   width: 100%;
   height: 50px;
+  display: flex;
+}
+.nav .NAME
+{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(75, 74, 73);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px;
 }
 .nav .menu
 {
@@ -29,7 +47,7 @@
   list-style: none;
   background-color: rgb(75, 74, 73);
 }
-li {
+#menu {
   position: relative;
   width: 150px;
   height: 50px;
@@ -43,7 +61,7 @@ li {
   z-index: 1;
 }
 
-li:after {
+#menu:after {
   position: absolute;
   content: "";
   width: 0;
@@ -56,16 +74,47 @@ li:after {
   transition: all 0.3s ease;
 }
 
-li:hover {
+#menu:hover {
   cursor: pointer;
   color: #000;
 }
 
-li:hover:after {
+#menu:hover:after {
   right: 0;
   width: 100%;
 }
 
-li:active {
+#menu:active {
   top: 2px;
+}
+
+#menu span
+{
+  background-color: transparent;
+}
+
+/*list film*/
+.list_film
+{
+  display: none;
+  position: absolute;
+  width: 450px;
+  list-style: none;
+}
+.list_film #listfilm
+{
+  width: 150px;
+  float: left;
+  background-color: #282c34;
+  color: rgb(255, 183, 0);
+  font-size: large;
+  text-align: center;
+}
+.list_film #listfilm:hover
+{
+  background-color: #494e58;
+}
+.types:hover .list_film{
+  display: block;
+  opacity: 1;
 }
