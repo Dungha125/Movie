@@ -27,20 +27,21 @@ const Imageslide = ({image}) =>
   }, [image.length]);
   return <Slidebar image={image[currentImage]} />;
 }
-const Imageitem =({image}) =>
+const Imageitem =({image,caption}) =>
 {
-  return <Phimle image={image[1]} />
+  return <Phimle image={image} caption={caption} />
 }
 function App() {
   return (
     <div className="App">
         
-        <div className="nav">
           <Navbar />
-        </div>
           <Imageslide image={image} />
         <div className='main-content'>
-          <Imageitem image={image} />
+          <Imageitem image={image[0]} caption="Phim lẻ mới cập nhập"/>
+          <Imageitem image={image[1]} caption="Phim bộ mới cập nhập"/>
+          <Imageitem image={image[2]} caption="Phim thịnh hành"/>
+
         </div>
     </div>
   );

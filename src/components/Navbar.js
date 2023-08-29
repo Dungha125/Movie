@@ -2,7 +2,8 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <><span className="NAME">DUNGHAPHIM</span>
+    <div className="nav">
+    <span className="NAME">DUNGHAPHIM</span>
     <ul className="menu">
       <li id='menu'>TRANG CHỦ</li>
       <li id='menu' className='types'>
@@ -20,12 +21,12 @@ function Navbar() {
       <li id='menu'>PHIM LẺ</li>
       <li id='menu'>PHIM BỘ</li>
       <li id='menu'>TOP PHIM</li>
-    </ul>
-    <div className='search'>
+      <div className='search'>
       <input className='input_search' placeholder='Tìm phim tại đây'></input>
       <button className='btn_search'><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
-    </>
+    </ul>
+    </div>
   )
 }
 

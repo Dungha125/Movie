@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Phimle({image}) {
+function Phimle({image, caption}) {
   return (
     <div className='block'>
             <div className='heading'>
               <a href='#'>
-                <h2 className='caption'>Phim lẻ mới cập nhật</h2>
+                <h2 className='caption'>{caption}</h2>
               </a>
               <a className='see-more' href='#'>Xem tất cả</a>
             </div>
