@@ -56,7 +56,6 @@ function App() {
 
   return (
     <div className="App">
-
           <Navbar toggleMenu={toggleMenu} menuVisible={menuVisible} toggleSearch={toggleSearch} searchVisible={searchVisible}/>
           <Imageslide image={image} />
         <div className='main-content'>
