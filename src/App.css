@@ -240,6 +240,7 @@
 .block .list_phim_content .itemsmall p {
   width: 100%;
   height: 30px;
+  text-align: left;
   color: #ffffff;
   font-size: 18px;
   line-height: 30px;
