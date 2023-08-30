@@ -11,15 +11,15 @@
 {
   top:0;
   left: 0;
-  height: 400px;
+  height: 300px;
   min-height:200px;
 }
 .slide_image {
   width: 100%;
-  height: 400px;
+  height: 300px;
   transition: transform 0.5s ease-in-out;
   overflow: hidden;
-  
+  object-fit: cover;
 }
 
 
@@ -30,6 +30,7 @@
   height: 50px;
   display: flex;
   position: absolute;
+  justify-content: space-between;
   background: linear-gradient(180deg, rgb(18, 19, 21) 0%, rgba(55, 55, 55, 0) 100%);
 }
 .nav .NAME
@@ -204,30 +205,34 @@
   list-style: none;
   flex-wrap: wrap;
 }
-.block .list_phim_content .itemsmall
-{
+.block .list_phim_content .itemsmall {
   width: 300px;
   height: 150px;
-  float:left;
+  float: left;
   position: relative;
   margin: 0 10px 10px 0;
   overflow: hidden;
 }
-.block .list_phim_content .itemsmall img
-{
+
+.block .list_phim_content .itemsmall img {
   width: 300px;
   height: 150px;
   object-fit: cover;
-  
-}
-.block .list_phim_content .itemsmall img:hover
-{
-  
-  transform: scale(1.3);
+  transition: transform 0.3s ease-in-out;
 }
 
-.block .list_phim_content .itemsmall p
-{
+.block .list_phim_content .itemsmall i,
+.block .list_phim_content .itemsmall img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.block .list_phim_content .itemsmall:hover i,
+.block .list_phim_content .itemsmall:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.block .list_phim_content .itemsmall p {
   width: 100%;
   height: 30px;
   color: #ffffff;
@@ -239,4 +244,56 @@
   bottom: 0;
   overflow: hidden;
   z-index: 1;
+}
+
+.block .list_phim_content .itemsmall i {
+  width: 50px;
+  height: 50px;
+  color: #ffc800;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  border-radius: 100%;
+  background-color: rgba(60, 65, 74, 0.634);
+  opacity: 0;
+  transform: scale(1.3);
+  z-index: 1;
+}
+
+.block .list_phim_content .itemsmall a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*footer*/
+.Footer
+{
+  width: 100%;
+  height: max-content;
+  background-color: #1d1f23;
+  position: relative;
+}
+.Footer .namefooter
+{
+  width: 100%;
+  height: max-content;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 300px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+  text-shadow: 5px 5px 10px #000;
+}
+.slide_image_footer {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+  overflow: hidden;
+  object-fit: cover;
+  opacity: 0.4;
 }

@@ -3,6 +3,7 @@ import './App.css';
 import Slidebar from './components/Slidebar';
 import Navbar from './components/Navbar';
 import Phimle from './components/Phimle';
+import Footer from './components/Footer';
 import img1 from './image/img1.jpg';
 import img2 from './image/img2.jpg';
 import img3 from './image/img3.jpg';
@@ -31,6 +32,10 @@ const Imageitem =({image,caption}) =>
 {
   return <Phimle image={image} caption={caption} />
 }
+const Imagefooter = ({image}) =>
+          {
+            return <Footer image={image} />
+          }
 function App() {
   return (
     <div className="App">
@@ -42,6 +47,9 @@ function App() {
           <Imageitem image={image[1]} caption="Phim bộ mới cập nhập"/>
           <Imageitem image={image[2]} caption="Phim thịnh hành"/>
 
+        </div>
+        <div className='Footer'>
+          <Imagefooter image={image[0]} />
         </div>
     </div>
   );

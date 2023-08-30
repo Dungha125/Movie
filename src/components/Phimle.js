@@ -12,6 +12,7 @@ function Phimle({image, caption}) {
               <ul className='list_phim_content'>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}>
                     </img>
                     <p>Phim le</p>
@@ -19,19 +20,14 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                   </a>
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
-                    <img src={image}></img>
-                      <p>Phim le</p>
-                    
-                  </a>
-                </li>
-                <li className='itemsmall'>
-                  <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
@@ -39,6 +35,7 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
@@ -46,6 +43,7 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
@@ -53,6 +51,7 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
@@ -60,6 +59,7 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
@@ -67,6 +67,7 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
@@ -74,6 +75,15 @@ function Phimle({image, caption}) {
                 </li>
                 <li className='itemsmall'>
                   <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
+                    <img src={image}></img>
+                      <p>Phim le</p>
+                    
+                  </a>
+                </li>
+                <li className='itemsmall'>
+                  <a title='phimdungha' href='#'>
+                  <i class="fa-solid fa-play"></i>
                     <img src={image}></img>
                       <p>Phim le</p>
                     
