@@ -36,11 +36,28 @@ const Imagefooter = ({image}) =>
           {
             return <Footer image={image} />
           }
+
+
+
 function App() {
+
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => 
+  {
+    setMenuVisible(!menuVisible);
+  }
+
+  const [searchVisible, setSearchVisible] = useState(false);
+  const toggleSearch = () =>
+  {
+    setSearchVisible(!searchVisible);
+  }
+
   return (
     <div className="App">
-        
-          <Navbar />
+
+          <Navbar toggleMenu={toggleMenu} menuVisible={menuVisible} toggleSearch={toggleSearch} searchVisible={searchVisible}/>
           <Imageslide image={image} />
         <div className='main-content'>
           <Imageitem image={image[0]} caption="Phim lẻ mới cập nhập"/>

@@ -1,10 +1,13 @@
-import React from 'react'
+import Reactf from 'react'
 
-function Navbar() {
+
+function Navbar({toggleMenu,menuVisible,toggleSearch,searchVisible}) {
   return (
     <div className="nav">
+    <button id='bardevice' onClick={() => toggleMenu()}><i  class="fa-solid fa-bars"></i></button>
     <span className="NAME">DUNGHAPHIM</span>
-    <ul className="menu">
+    
+    <ul className={`menu ${menuVisible ? 'visible' : 'hidden'}`}>
       <li id='menu'>TRANG CHỦ</li>
       <li id='menu' className='types'>
         <span>THỂ LOẠI</span>
@@ -36,8 +39,8 @@ function Navbar() {
       
     </ul>
     <div className='search'>
-      <input className='input_search' placeholder='Tìm phim tại đây'></input>
-      <button className='btn_search'><i class="fa-solid fa-magnifying-glass"></i></button>
+      <input className={`input_search ${searchVisible ? 'input_visible' : 'input_hidden'}`} placeholder='Tìm phim tại đây'></input>
+      <button className='btn_search' onClick={() => toggleSearch()}><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
     </div>
   )
