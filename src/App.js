@@ -28,15 +28,20 @@ const Imageslide = ({image}) =>
   }, [image.length]);
   return <Slidebar image={image[currentImage]} />;
 }
-const Imageitem =({image,caption}) =>
-{
-  return <Phimle image={image} caption={caption} />
-}
+
 const Imagefooter = ({image}) =>
           {
             return <Footer image={image} />
           }
 
+          const url = 'https://movies-api14.p.rapidapi.com/movies';
+          const options = {
+            method: 'GET',
+            headers: {
+              'X-RapidAPI-Key': '7f5f3470a8mshfb5fe5d36ed6a85p1fda29jsnce35e90f5b98',
+              'X-RapidAPI-Host': 'movies-api14.p.rapidapi.com'
+            }
+          };
 
 
 function App() {
@@ -59,9 +64,7 @@ function App() {
           <Navbar toggleMenu={toggleMenu} menuVisible={menuVisible} toggleSearch={toggleSearch} searchVisible={searchVisible}/>
           <Imageslide image={image} />
         <div className='main-content'>
-          <Imageitem image={image[0]} caption="Phim lẻ mới cập nhập"/>
-          <Imageitem image={image[1]} caption="Phim bộ mới cập nhập"/>
-          <Imageitem image={image[2]} caption="Phim thịnh hành"/>
+        <Phimle />
 
         </div>
         <div className='Footer'>

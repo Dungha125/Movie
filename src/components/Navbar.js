@@ -1,4 +1,4 @@
-import Reactf from 'react'
+import React from 'react'
 
 
 function Navbar({toggleMenu,menuVisible,toggleSearch,searchVisible}) {
