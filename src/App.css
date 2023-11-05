@@ -217,6 +217,7 @@
   margin: 0 10px 10px 0;
   overflow: hidden;
   text-align: center;
+  border-radius: 8px;
 }
 
 .block .list_phim_content .itemsmall img {

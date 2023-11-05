@@ -3,7 +3,10 @@ import './App.css';
 import Slidebar from './components/Slidebar';
 import Navbar from './components/Navbar';
 import Phimle from './components/Phimle';
+import Phimbo from './components/Phimbo';
 import Footer from './components/Footer';
+import BestAnimation from './components/BestAnimation';
+import Shows from './components/Shows';
 import img1 from './image/img1.jpg';
 import img2 from './image/img2.jpg';
 import img3 from './image/img3.jpg';
@@ -33,15 +36,7 @@ const Imagefooter = ({image}) =>
           {
             return <Footer image={image} />
           }
-
-          const url = 'https://movies-api14.p.rapidapi.com/movies';
-          const options = {
-            method: 'GET',
-            headers: {
-              'X-RapidAPI-Key': '7f5f3470a8mshfb5fe5d36ed6a85p1fda29jsnce35e90f5b98',
-              'X-RapidAPI-Host': 'movies-api14.p.rapidapi.com'
-            }
-          };
+          
 
 
 function App() {
@@ -65,7 +60,9 @@ function App() {
           <Imageslide image={image} />
         <div className='main-content'>
         <Phimle />
-
+        <Phimbo />
+        <BestAnimation />
+        <Shows />
         </div>
         <div className='Footer'>
           <Imagefooter image={image[0]} />
